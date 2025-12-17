@@ -1,0 +1,209 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="description" content="Ryan Saleh portfolio — mobile-first, responsive, accessible." />
+  <title>Ryan Saleh | Portfolio</title>
+
+  <link rel="stylesheet" href="styles.css" />
+  <script src="script.js" defer></script>
+</head>
+
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+
+  <header class="site-header" id="top">
+    <div class="container header-inner">
+      <a class="brand" href="#top" aria-label="Ryan Saleh home">
+        <span class="brand-mark" aria-hidden="true">RS</span>
+        <span class="brand-name">Ryan Saleh</span>
+      </a>
+
+      <button class="menu-btn" type="button" aria-expanded="false" aria-controls="siteNav">
+        <span class="sr-only">Open menu</span>
+        <span aria-hidden="true">☰</span>
+      </button>
+
+      <nav class="nav" id="siteNav" aria-label="Primary navigation">
+        <a href="#projects">Projects</a>
+        <a href="#about">About</a>
+        <a href="#contact">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main">
+    <!-- HERO -->
+    <section class="hero">
+      <div class="container hero-inner">
+        <div class="hero-text">
+          <p class="eyebrow">Mobile-First Portfolio</p>
+          <h1>Design-forward work with clean, responsive front-end builds.</h1>
+          <p class="lead">
+            I’m Ryan Saleh. I create modern, accessible websites and present creative projects with
+            a simple, professional UI that looks great on every device.
+          </p>
+
+          <div class="hero-actions">
+            <a class="btn primary" href="#projects">View Projects</a>
+            <a class="btn" href="#contact">Contact</a>
+          </div>
+
+          <ul class="hero-stats" aria-label="Highlights">
+            <li><span class="stat-num">Mobile</span><span class="stat-label">first layout</span></li>
+            <li><span class="stat-num">Fast</span><span class="stat-label">lightweight CSS</span></li>
+            <li><span class="stat-num">AA</span><span class="stat-label">accessibility focus</span></li>
+          </ul>
+        </div>
+
+        <div class="hero-card" role="img" aria-label="Decorative preview card">
+          <div class="hero-card-top">
+            <span class="pill">Portfolio</span>
+            <span class="pill ghost">PDF Projects</span>
+          </div>
+          <div class="preview-grid" aria-hidden="true">
+            <div class="preview-tile"></div>
+            <div class="preview-tile"></div>
+            <div class="preview-tile"></div>
+            <div class="preview-tile"></div>
+          </div>
+          <p class="muted small">Tap a project card to open the PDF.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- PROJECTS -->
+    <section class="section" id="projects">
+      <div class="container section-head">
+        <h2>Projects</h2>
+        <p class="muted">
+          Selected work (PDF format). Each card opens in a new tab.
+        </p>
+      </div>
+
+      <div class="container projects-grid">
+        <article class="project card">
+          <a class="project-link" href="skatemockupforclass.pdf" target="_blank" rel="noopener">
+            <div class="thumb" aria-hidden="true">
+              <span class="thumb-badge">PDF</span>
+            </div>
+            <div class="card-body">
+              <h3>Skateboard Mockup</h3>
+              <p>
+                A skateboard deck mockup exploring graphic placement, balance, and branding across a physical format.
+              </p>
+              <div class="tags">
+                <span class="tag">Mockup</span>
+                <span class="tag">Layout</span>
+                <span class="tag">Design</span>
+              </div>
+            </div>
+          </a>
+        </article>
+
+        <article class="project card">
+          <a class="project-link" href="ryansaleh_finalport.pdf" target="_blank" rel="noopener">
+            <div class="thumb" aria-hidden="true">
+              <span class="thumb-badge">PDF</span>
+            </div>
+            <div class="card-body">
+              <h3>Brand Identity Portfolio</h3>
+              <p>
+                A cohesive identity system including logo, letterhead, and supporting brand elements with consistent typography.
+              </p>
+              <div class="tags">
+                <span class="tag">Branding</span>
+                <span class="tag">Logo</span>
+                <span class="tag">Typography</span>
+              </div>
+            </div>
+          </a>
+        </article>
+
+        <article class="project card">
+          <a class="project-link" href="thing5.pdf" target="_blank" rel="noopener">
+            <div class="thumb" aria-hidden="true">
+              <span class="thumb-badge">PDF</span>
+            </div>
+            <div class="card-body">
+              <h3>Art Reflection: The Second Body</h3>
+              <p>
+                A reflective visual response inspired by <em>The Second Body</em>, focusing on identity, form, and perception.
+              </p>
+              <div class="tags">
+                <span class="tag">Reflection</span>
+                <span class="tag">Concept</span>
+                <span class="tag">Visual</span>
+              </div>
+            </div>
+          </a>
+        </article>
+      </div>
+    </section>
+
+    <!-- ABOUT -->
+    <section class="section" id="about">
+      <div class="container split">
+        <div class="card pad">
+          <h2>About</h2>
+          <p class="muted">
+            I’m focused on mobile-first layout, clean semantic HTML, and modern CSS for responsive design.
+            I aim for interfaces that feel simple, fast, and easy to use.
+          </p>
+          <div class="skills">
+            <span class="skill">HTML5</span>
+            <span class="skill">CSS (Grid/Flex)</span>
+            <span class="skill">Responsive</span>
+            <span class="skill">Accessibility</span>
+            <span class="skill">GitHub Pages</span>
+          </div>
+        </div>
+
+        <div class="card pad">
+          <h2>Quick Links</h2>
+          <ul class="list">
+            <li><a class="link" href="#projects">Jump to Projects →</a></li>
+            <li><a class="link" href="#contact">Jump to Contact →</a></li>
+            <li><a class="link" href="#top">Back to Top →</a></li>
+          </ul>
+          <p class="muted small">Tip: This page is optimized for touch — buttons meet the 44px minimum size.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- CONTACT -->
+    <section class="section" id="contact">
+      <div class="container section-head">
+        <h2>Contact</h2>
+        <p class="muted">This form is front-end only (no backend). It will validate and display a confirmation message.</p>
+      </div>
+
+      <div class="container">
+        <form class="card pad form" id="contactForm" novalidate>
+          <div class="field">
+            <label for="email">Email</label>
+            <input id="email" name="email" type="email" autocomplete="email" required placeholder="you@example.com" />
+          </div>
+
+          <div class="field">
+            <label for="message">Message</label>
+            <textarea id="message" name="message" rows="5" required placeholder="Write your message..."></textarea>
+          </div>
+
+          <p class="form-feedback" id="formFeedback" aria-live="polite"></p>
+
+          <button class="btn primary" type="submit">Send</button>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <p class="muted">© <span id="year"></span> Ryan Saleh</p>
+      <a class="link" href="#top">Back to top ↑</a>
+    </div>
+  </footer>
+</body>
+</html>
